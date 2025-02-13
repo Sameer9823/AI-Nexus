@@ -7,9 +7,9 @@ const ContactUs = () => {
       
       {/* Left Section */}
       <div className="md:w-1/2 container mx-auto text-center md:text-left">
-        <button className="bg-purple-500 text-black px-6 py-2 rounded-full font-bold text-lg hover:bg-purple-400 transition">
+        {/* <button className="bg-purple-500 text-black px-6 py-2 rounded-full font-bold text-lg hover:bg-purple-400 transition">
           Contact Us
-        </button>
+        </button> */}
         <h2 className="text-3xl sm:text-5xl font-bold mt-6">Get in Touch With Us</h2>
         <p className="mt-3 text-gray-300 text-base sm:text-lg">
           We're here to support you! Feel free to reach out for assistance, feedback, or any questions.
