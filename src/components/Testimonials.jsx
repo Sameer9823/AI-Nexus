@@ -29,17 +29,17 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <section className="w-full py-16 px-6 bg-black text-white text-center">
-      <h2 className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-violet-500 bg-clip-text text-transparent mb-8">
+      <h2 className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-violet-500 bg-clip-text text-transparent mb-12">
         What Our Clients Say
       </h2>
 
       <motion.div
-        className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
         initial="hidden"
         animate="show"
         variants={{
           hidden: { opacity: 0 },
-          show: { opacity: 1, transition: { staggerChildren: 0.3 } },
+          show: { opacity: 1, transition: { staggerChildren: 0.2 } },
         }}
       >
         {testimonials.map((testimonial, index) => (
@@ -49,11 +49,13 @@ const Testimonials = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            whileHover={{ scale: 1.05, boxShadow: "0 4px 20px rgba(0, 0, 0, 0.1)" }}
+            whileHover={{ scale: 1.05, boxShadow: "0 4px 20px rgba(255, 255, 255, 0.1)" }}
           >
             <Quote size={32} className="text-purple-400" />
 
-            <p className="text-gray-300 text-left">{testimonial.review}</p>
+            <p className="text-gray-300 text-left text-sm sm:text-base">
+              {testimonial.review}
+            </p>
 
             <div className="flex">
               {[...Array(5)].map((_, i) => (
@@ -70,7 +72,7 @@ const Testimonials = () => {
 
             <div className="text-left">
               <h3 className="text-lg font-semibold">{testimonial.name}</h3>
-              <p className="text-gray-400">{testimonial.role}</p>
+              <p className="text-gray-400 text-sm">{testimonial.role}</p>
             </div>
           </motion.div>
         ))}

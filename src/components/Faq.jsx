@@ -38,20 +38,23 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <div className="bg-black text-white py-12">
-      <div className="max-w-5xl mx-auto px-6">
-        <h2 className="text-4xl font-bold text-purple-400 text-center mb-6">
+    <div className="bg-black text-white py-12 px-4">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-3xl sm:text-4xl font-bold text-purple-400 text-center mb-6">
           Frequently Asked Questions
         </h2>
-        <p className="text-gray-300 text-center mb-8">
+        <p className="text-gray-300 text-center mb-8 text-sm sm:text-base">
           Your quick guide to common inquiries and solutions.
         </p>
 
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <div key={index} className="border border-purple-500 rounded-xl overflow-hidden">
+            <div
+              key={index}
+              className="border border-purple-500 rounded-xl overflow-hidden"
+            >
               <button
-                className="w-full flex justify-between items-center text-left p-4 text-lg font-semibold bg-gray-800 hover:bg-purple-600 transition duration-300"
+                className="w-full flex justify-between items-center text-left p-4 text-base sm:text-lg font-semibold bg-gray-800 hover:bg-purple-600 transition duration-300"
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
               >
                 <span>{index + 1}. {faq.question}</span>
@@ -61,11 +64,14 @@ export default function FAQ() {
                   <FaPlus className="text-purple-400" />
                 )}
               </button>
-              {openIndex === index && (
-                <div className="p-4 bg-gray-700 text-gray-300 transition-all duration-500">
-                  {faq.answer}
-                </div>
-              )}
+
+              <div
+                className={`transition-all duration-500 ease-in-out ${
+                  openIndex === index ? "max-h-40 p-4 bg-gray-700 text-gray-300" : "max-h-0 p-0 overflow-hidden"
+                }`}
+              >
+                {faq.answer}
+              </div>
             </div>
           ))}
         </div>

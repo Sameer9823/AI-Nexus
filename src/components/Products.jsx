@@ -56,7 +56,7 @@ export default function AISection() {
           </motion.div>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center gap-24 justify-between my-12">
+        <div className=" hidden md:flex flex-col md:flex-row items-center gap-24 justify-between my-12">
           <motion.div
             className="md:w-1/2 flex justify-center"
             initial={{ opacity: 0, x: -100 }}
