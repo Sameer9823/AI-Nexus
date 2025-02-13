@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 function Hero() {
   return (
-    <section className="relative w-full flex flex-col items-center justify-center text-center text-white px-6 bg-gradient-to-tr from-black via-slate-900 to-purple-900 min-h-screen pt-[5rem] md:pt-0">
+    <section className="relative w-full flex flex-col items-center justify-center text-center text-white px-6 bg-gradient-to-tr from-black via-slate-900 to-purple-900 min-h-screen ">
       {/* Grid Background Effect */}
       <div className="absolute inset-0 bg-grid-white/[0.1] pointer-events-none"></div>
 

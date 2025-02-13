@@ -3,7 +3,7 @@ import { FaRegEnvelope, FaUser, FaPen, FaComments, FaPhoneAlt, FaCheckCircle } f
 
 const ContactUs = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center  py-12 bg-black text-white px-18">
+    <div className="flex flex-col md:flex-row items-center justify-center  py-12 bg-black text-white lg:px-18 px-4">
       
       {/* Left Section */}
       <div className="md:w-1/2 container mx-auto text-center md:text-left">
