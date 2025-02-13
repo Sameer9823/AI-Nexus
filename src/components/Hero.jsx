@@ -42,7 +42,7 @@ function Hero() {
           transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
           className="mt-8 flex flex-col md:flex-row items-center justify-center gap-4"
         >
-          <a href="http://localhost:3000/" target="_blank">
+          <a href="https://cloudinary-saas-five.vercel.app/" target="_blank">
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

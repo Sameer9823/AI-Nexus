@@ -31,7 +31,7 @@ function Navbar() {
 
         {/* Get Started Button */}
         <button className="hidden md:block bg-white/20 text-white px-5 py-2 rounded-lg font-semibold shadow-md backdrop-blur-md border border-white/30 hover:bg-white/30 transition">
-          <a href="http://localhost:3000/" target="_blank">
+          <a href="https://cloudinary-saas-five.vercel.app/" target="_blank">
             Get Started
           </a>
         </button>

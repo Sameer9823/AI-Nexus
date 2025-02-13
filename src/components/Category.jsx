@@ -95,7 +95,7 @@ function Features() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.5 }}
       >
-         <a href="http://localhost:3000/" target="_blank">
+         <a href="https://cloudinary-saas-five.vercel.app/" target="_blank">
         <button className="flex items-center gap-2 bg-purple-400 text-black font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-blue-500 transition">
          
           Get Started →
