@@ -13,6 +13,7 @@ import FAQ from './components/Faq'
 import AISection from './components/Products'
 import ContactUs from './components/Contact'
 import Footer from './components/Footer'
+import { NoiseDemo } from './Cursor'
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
      <AISection/>
      <ContactUs/>
      <Footer/>
+     
     </div>
     </>
   )
